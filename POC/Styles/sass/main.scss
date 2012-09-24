@@ -2,4 +2,5 @@
 	@media only screen and (min-width: 640px) { @content; }
 }
 
-@import "responsive"
+@import "compass/reset";
+@import "responsive";

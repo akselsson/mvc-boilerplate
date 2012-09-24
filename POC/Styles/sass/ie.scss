@@ -1,0 +1,6 @@
+﻿@mixin media-wide-screens {
+	@content;
+}
+
+@import "compass/reset";
+@import "responsive";
