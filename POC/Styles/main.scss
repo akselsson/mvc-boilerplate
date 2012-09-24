@@ -1,0 +1,5 @@
+﻿@mixin media-wide-screens {
+	@media only screen and (min-width: 640px) { @content; }
+}
+
+@import "responsive"

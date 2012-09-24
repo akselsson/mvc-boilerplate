@@ -1,0 +1,17 @@
+﻿@import "compass"
+
+.main, .sidebar {
+	background: #ccc;
+}
+
+@include media-wide-screens { 
+	.main {
+		width: 66%;
+		float: left;
+	}
+	.sidebar {
+		float: right;
+		width: 33%;
+	}
+}
+

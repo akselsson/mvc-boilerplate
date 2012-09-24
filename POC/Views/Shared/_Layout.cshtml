@@ -1,0 +1,29 @@
+﻿@{
+    Bundles.Reference("styles/main.css");
+    Bundles.Reference("styles/ie.css","ie");
+}
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="sv"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="sv"><![endif]-->
+<!--[if gt IE 8 ]><html class="no-js ie ie9" lang="sv"><![endif]-->
+<!--[if !IE]><!--><html class="no-js no-ie" lang="sv"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!--[if (gte IE 9)|!(IE)]><!-->
+      @Bundles.RenderStylesheets()
+    <!--<![endif]-->
+    <!--[if (lte IE 8)]>
+      @Bundles.RenderStylesheets("ie")
+    <![endif]-->
+    
+    @Bundles.RenderScripts("head")
+</head>
+<body>
+    @RenderBody()
+
+    @Bundles.RenderScripts()
+</body>
+</html>
