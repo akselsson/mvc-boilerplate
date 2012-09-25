@@ -7,6 +7,7 @@ $root = split-path -parent $scriptPath
 
 pushd $root
 try {
+	bundle install
 	if($watch){
 		bundle exec compass watch
 	} else {
