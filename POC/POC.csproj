@@ -159,6 +159,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Styles\images\icons\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

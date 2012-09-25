@@ -1,14 +1,15 @@
-﻿
+﻿@import "icons/*.png";
+
 .logo{
 	display: block;
 	width: 200px;
 	height: 100px;
 	background-repeat: no-repeat;
-	background-image: url(images/logo.png);
+	background-image: inline-image('logo.png');
 }
 
 .main {
-	background: #ccc;
+	@include icons-sprite(rss);
 	@include media-wide-screens { 
 		float:left;
 		width: 66%;
@@ -16,7 +17,7 @@
 }
 
 .sidebar {
-	background: #eee;
+	@include icons-sprite(atom);
 	@include media-wide-screens {
 		float: left;
 		width: 33%;
@@ -25,3 +26,4 @@
 	 
 
 
+	  

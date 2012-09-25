@@ -8,7 +8,7 @@ $root = split-path -parent $scriptPath
 pushd $root
 try {
 	bundle install
-	bundle exec compass $action
+	bundle exec compass $action --trace
 } finally {
 	popd
 }
