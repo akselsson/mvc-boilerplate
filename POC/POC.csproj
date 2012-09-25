@@ -141,6 +141,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Styles\ie.css" />
+    <Content Include="Styles\images\adlibris.png" />
     <Content Include="Styles\main.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -213,10 +214,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Target Name="BeforeBuild" DependsOnTargets="sass">
+  </Target>
+  <Target Name="sass">
+    <Exec Command="powershell ../scripts/sass.ps1"/>
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
+  
   <Target Name="AfterBuild">
   </Target> -->
 </Project>
