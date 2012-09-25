@@ -141,7 +141,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Styles\ie.css" />
-    <Content Include="Styles\images\adlibris.png" />
+    <Content Include="Styles\images\logo.png" />
     <Content Include="Styles\main.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
