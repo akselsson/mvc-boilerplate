@@ -173,7 +173,7 @@
       <CompileStyle>Nested</CompileStyle>
       <DebugInfo>False</DebugInfo>
     </None>
-    <None Include="sass\imports\responsive.scss">
+    <None Include="sass\imports\layout.scss">
       <Compile>False</Compile>
       <Minify>True</Minify>
       <CompileStyle>Nested</CompileStyle>
@@ -217,7 +217,7 @@
   <Target Name="BeforeBuild" DependsOnTargets="sass">
   </Target>
   <Target Name="sass">
-    <Exec Command="powershell ../scripts/sass.ps1 compile"/>
+    <Exec Command="powershell ../scripts/sass.ps1 compile" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
