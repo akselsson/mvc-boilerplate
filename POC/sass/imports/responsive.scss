@@ -1,21 +1,16 @@
 ﻿
-
-.main, .sidebar {
+.main {
 	background: #ccc;
 	@include media-wide-screens { 
 		float:left;
-	}
-}
-
-
-.main {
-	@include media-wide-screens { 
 		width: 66%;
 	}
 }
 
 .sidebar {
+	background: #eee;
 	@include media-wide-screens {
+		float: left;
 		width: 33%;
 	}
 }
