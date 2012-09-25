@@ -2,19 +2,23 @@
 
 .main, .sidebar {
 	background: #ccc;
+	@include media-wide-screens { 
+		float:left;
+	}
 }
 
 
-	.main {
-		width: 100%;
-		@include media-wide-screens { 
-			width: 66%;
-			float: left;
-		}
+.main {
+	@include media-wide-screens { 
+		width: 66%;
 	}
-	.sidebar {
-		float: right;
+}
+
+.sidebar {
+	@include media-wide-screens {
 		width: 33%;
 	}
+}
+	
 
 
