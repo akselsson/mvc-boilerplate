@@ -1,4 +1,12 @@
 ﻿
+.logo{
+	display: block;
+	width: 200px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-image: url(images/logo.png);
+}
+
 .main {
 	background: #ccc;
 	@include media-wide-screens { 

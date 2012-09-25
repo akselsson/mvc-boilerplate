@@ -110,4 +110,5 @@ packages/
 
 # Sass
 .sass-cache
-/POC/styles
+/POC/styles/**/*.css
+/POC/styles/*.css
