@@ -26,7 +26,15 @@
     <div role="banner">
         <a href="/" class="logo"></a>
     </div>
-    @RenderBody()
+    <div role="main" class="main">
+        @RenderBody()
+    </div>
+    @if (IsSectionDefined("sidebar"))
+    {
+    <div role="complementary" class="sidebar">
+          @RenderSection("sidebar")  
+    </div>
+    }
 
     @Bundles.RenderScripts()
 </body>
